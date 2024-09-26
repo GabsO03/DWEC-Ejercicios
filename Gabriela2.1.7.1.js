@@ -1,0 +1,1 @@
+console.log("Comparación es " + ("coco" != "marco"));
