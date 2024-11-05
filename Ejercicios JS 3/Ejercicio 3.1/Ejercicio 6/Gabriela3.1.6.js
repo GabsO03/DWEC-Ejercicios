@@ -6,16 +6,10 @@ fetch('Gabriela3.1.6.json')
     data.forEach(estudiante => {
         estudiante.nota += 1;
     });
+
     newData = JSON.stringify(data);
+
+    console.log(newData);
+
 })
 .catch((error) => console.error(error))
-
-fetch('Gabriela3.1.6b.json', {
-    method: 'PUT',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: newData
-})
-.then((data) => console.log('Éxito: ', data))
-.catch((error) => console.error('Error:', error))
