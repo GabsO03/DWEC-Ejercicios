@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Gabriela.3.5.39.js"></script>
+    <style>
+        .barra {
+            background: #000;
+            height: 15px;
+            margin-top: 2px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            width: 0.2%;
+        }
+
+        #descarga80 {
+            width: 50%;
+        }
+
+        #descarga90 {
+            width: 100%;
+        }
+
+        ul {
+            width: 90%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Gestor de descargas</h1>
+    <button id="aniadirDescarga">Añadir descarga</button>
+    <div>
+        <h3>Descargas pendientes</h3>
+        <ul id="listaDescargas">
+            <li>
+                <p>Descarga ejemplo <span id="estado80">en pausa</span></p>
+                <div class="barra" id="descarga80"></div>
+                <button id="pausarResumir80">Pausar</button>
+                <button id="cancelar80">Cancelar</button>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Descargas completadas</h3>
+        <ul id="listaDescargasCompletas">
+            <li>
+                <p>Descarga ejemplo <span id="estado90">completada ✅</span></p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Descargas canceladas</h3>
+        <ul id="listaDescargasCanceladas">
+            <li>
+                <p>Descarga ejemplo <span id="estado90">cancelada ✖️</span></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
