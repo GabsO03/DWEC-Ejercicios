@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 5 - Filtrado</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .product { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h2>Ejercicio 5: Filtrado de Productos</h2>
+    <p>Implementa un sistema de filtrado que:</p>
+    <ul>
+        <li>Filtre por nombre mientras el usuario escribe</li>
+        <li>Filtre por categoría</li>
+        <li>Combine ambos filtros</li>
+        <li>Añada animaciones al filtrar</li>
+    </ul>
+
+    <input type="text" id="searchInput" placeholder="Buscar productos...">
+    <select id="categoryFilter">
+        <option value="">Todas las categorías</option>
+        <option value="electronics">Electrónica</option>
+        <option value="clothing">Ropa</option>
+        <option value="books">Libros</option>
+    </select>
+
+    <div id="productList">
+        <div class="product" data-category="electronics">
+            <h3>iPhone 13</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Samsung TV</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Camisa Azul</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Smartphone X200</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Camiseta Casual</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Auriculares Inalámbricos</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="books">
+            <h3>Novela de Aventuras</h3>
+            <p>Categoría: Libros</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Pantalón Deportivo</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Laptop Pro 14</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Vestido de Verano</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="books">
+            <h3>Libro de Cocina</h3>
+            <p>Categoría: Libros</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Tablet 10.5"</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Chaqueta de Invierno</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Smartwatch X200</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Pantalones de Cuero</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Monitor UltraWide</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="books">
+            <h3>La Sombra del Viento</h3>
+            <p>Categoría: Libros</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Chaqueta de Cuero</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Altavoces Bluetooth</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Bufanda de Lana</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        <div class="product" data-category="books">
+            <h3>El Nombre del Viento</h3>
+            <p>Categoría: Libros</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <h3>Cámara Digital 4K</h3>
+            <p>Categoría: Electrónica</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <h3>Botines de Invierno</h3>
+            <p>Categoría: Ropa</p>
+        </div>
+        
+    </div>
+
+    <script src="Gabriela4.2.10.js"></script>
+</body>
+</html>
